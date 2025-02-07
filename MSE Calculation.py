@@ -24,4 +24,4 @@ eSquared = squared()
 #mse as Mean Squared Error
 mse_Sample = eSquared/(per-1)
 mse = eSquared/per
-print(f'MSE is {mse}\nMSE Sample Variance is {mse_Sample}')
+print(f'MSE: {mse}\nMSE Sample Variance: {mse_Sample}')
