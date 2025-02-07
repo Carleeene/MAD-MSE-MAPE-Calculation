@@ -27,5 +27,5 @@ er = e()
 
 #MAD calculation
 #mad as Mean Absolute Deviation
-mad = er/per
-print(mad)
+mad = int(er/per)
+print(f'Mean Absolute Deviation: {mad}')
