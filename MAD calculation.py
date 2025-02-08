@@ -12,12 +12,8 @@ def e():
     av = []
     fv = []
     for i in range(per):
-        actual = int(input(f'Input the Actual Value for Period {1+i}: '))
-        av.append(actual)
-
-    for x in range(per):
-        forecast = int(input(f'Input the Forecast Value for Period {1+x}: '))
-        fv.append(forecast)
+        av.append(int(input(f'Input the Actual Value for Period {1+i}: ')))
+        fv.append(int(input(f'Input the Forecast Value for Period {1+i}: ')))
 
     for a, f in zip(av, fv):
         error += abs(a - f)
@@ -27,5 +23,5 @@ er = e()
 
 #MAD calculation
 #mad as Mean Absolute Deviation
-mad = int(er/per)
+mad = round(er/per, 2)
 print(f'Mean Absolute Deviation: {mad}')

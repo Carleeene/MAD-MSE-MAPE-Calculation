@@ -1,6 +1,6 @@
 #Mean Squared Error and Sample Variance calculation
 
-#per as Period
+#per variable as Period
 per = int(input('Total Period of Operations: '))
 
 #Error Squared calculation
@@ -22,6 +22,6 @@ eSquared = squared()
 #Calculate the MSE and Sample Variance
 #mse_Sample as Mean Squared Error Sample Variance
 #mse as Mean Squared Error
-mse_Sample = eSquared/(per-1)
-mse = eSquared/per
+mse_Sample = round(eSquared/(per-1), 2)
+mse = round(eSquared/per, 2)
 print(f'MSE: {mse}\nMSE Sample Variance: {mse_Sample}')
